@@ -1,0 +1,52 @@
+{
+  "name": "@routstr/client-sdk",
+  "version": "1.1.0",
+  "description": "TypeScript SDK for interacting with the Routstr decentralized AI network",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "routstr",
+    "ai",
+    "llm",
+    "bitcoin",
+    "lightning",
+    "cashu",
+    "nostr",
+    "typescript",
+    "decentralized"
+  ],
+  "author": "Routstr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/routstr/client-sdk.git"
+  },
+  "dependencies": {
+    "@cashu/cashu-ts": "^2.5.2",
+    "nostr-tools": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
